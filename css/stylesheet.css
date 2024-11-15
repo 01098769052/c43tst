@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 25%;
+    grid-template-rows: 2fr 2fr 2fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "iphone6 iphone6 Labs Labs"
+      "Keyboard IMAC Apple iCloud"
+      "Games MuchBetter MuchBetter iCloud"
+      "Twitter POPULAR vision vision";
+  }
+  .iphone6{
+  display: flex;
+ justify-content: space-around;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cont{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+  
+}
+ h5{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #9FA3A7;
+}
+h3{
+  font-family: "Arvo", serif;
+  font-size: 20px;
+  font-weight:400 ;
+  padding: 20px 0px;
+}
+.cont p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ABA6A7;
+}
+.photo{
+  width: 70%;
+ align-self: flex-end;
+  
+}
+.photo img{
+  width: 100%;
+}
+  .Labs{
+    background-color: #F7F8F9;
+  
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+   
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  .labcont{
+  width: 65%;
+  padding: 20px 0px;
+  
+  }
+  .labcont a{
+    color: #7ED0E0;
+  }
+  h1{
+    font-family: "Arvo", serif;
+    font-size: 48px;
+    font-weight: 400;
+  padding: 20px 0px;
+  }
+  .labcont h5{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-family: 700;
+  }
+  .Keyboard{
+    background-color: #F05638;
+  }
+  .keypho{
+    padding-top: 50px;
+  }
+  .keypho img{
+   width: 100%;
+  }
+  .keycontain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: 20px;
+  }
+  .contt{
+    
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .Keyboard h3{
+    font-family: "Arvo", serif;
+    font-size: 18px;
+    font-weight:400 ;
+    color: white;
+  }
+  .Keyboard a{
+    color: #FFC80A;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .Keyboard span{
+    color: #FFC80A;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700
+  }
+  .IMAC{
+   
+    position: relative;
+  
+  }
+  .IMAC h3{
+    font-family: "Arvo", serif;
+    font-size: 24px;
+    font-weight:400 ;
+    padding: 20px 0px;
+  }
+  .IMAC h5{
+    padding-top: 20px;
+  }
+  .imaccont{
+    padding-top: 50px;
+    width: 50%;
+  
+  text-align: center;
+  margin: auto;
+  }
+  
+  .macpho img{
+    width: 110%;
+    position: absolute;
+    bottom: 0;
+    right:30% ;
+    
+  }
+  .Apple{
+   
+    padding-top: 50px;
+    
+    
+  }
+  .apcont{
+    width: 80%;
+    display: block;
+    
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 20px;
+  }
+  .Apple a{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px 20px;
+    color: #7ED0E0; 
+  }
+  .Apple span{
+    
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700
+  }
+  .iCloud{
+    grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      background-color: #8f76bc;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  .circle{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    background-color: #8166b0;
+    border-radius: 50%;
+    
+  
+  }
+  .circle-inner{
+    padding: 3px 25px;
+    width: fit-content;
+    background-color: #9FA3A7;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    
+  }
+  .circle img{
+    width: 70%;
+  }
+  
+  
+  .iCloud-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 40%;
+    padding: 50px;
+    margin-top: 30px;
+  }
+  .iCloud-text h2{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Arvo", serif;
+      margin: 20px 0px;
+  }
+
+  .iCloud-text p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  
+  }
+  .iCloud-text button{
+    background-color: #ffc80a;
+    width: fit-content;
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: none;
+    margin: auto;
+  }
+  .Games{
+   
+    text-align: center;
+    padding-top: 50px;
+  
+  }
+  .gamepho{
+  width: 70%;
+  margin: auto;
+  }
+  .gamepho img{
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .Games a{
+    color: #7ED0E0;;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  .gamepho h3{
+    font-family: "Arvo", serif;
+    font-size: 22px;
+    font-weight:400 ;
+    padding-bottom: 30px ;
+  }
+  
+  .MuchBetter{
+    position: relative;
+  background-color: #93b6b7;
+  background-image: url(../images/5bc2f42d5a5ed97dab707e7e_UX.png);
+  background-position: 50% 100%;
+      background-size: 80%;
+  background-repeat: no-repeat;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  
+  }
+  .muchcontain{
+    display: flex;
+    
+   
+  }
+  .best{
+    background-color: #fa684f;
+    position: absolute;
+      left: 30px;
+      top: 20px;
+      padding-right: 10px;
+      padding-left: 10px;
+      border-radius: 5px;
+      font-size: 8px;
+      line-height: 20px;
+      font-weight: 700;
+  }
+  .heaad{
+    display: block;
+    max-width: 280px;
+    margin: auto;
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+  .heaad h3{
+    
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+  
+    padding-bottom: 20px;
+  }
+  
+  .haedimg{
+    position: absolute;
+    left: -7%;
+  bottom: -4px;
+    width: 90%;
+  }
+  .haedimg img{
+    width: 100%;
+  
+  }
+  .Twitter{
+    background-color:#38D5F4;
+    padding-left: 34px;
+  }
+  .twetcont{
+    width: 240px;
+      height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  overflow: auto;
+  background-color: #35CFED;
+  width: 60%;
+  border-radius: 50%;
+  margin-left: 50px;
+    
+  }
+  .tweet{
+  width: 80%;
+  
+  text-align: center;
+  
+  
+  }
+  .tweet img{
+    width: 30%;
+    padding-top: 20px ;
+  }
+  .tweet h3{
+    padding-bottom: 20px;
+    font-family: "Arvo", serif;
+    font-size: 22px;
+    font-weight:400 ;
+    color: white;
+  }
+  .POPULAr{
+ 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pop-inner{
+   padding: 30px 0px;
+   
+  }
+  .pop-inner span{
+    padding: 2px 15px;
+    width: fit-content;
+    background-color:#7BC424;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .POPULAr h3{
+ 
+    font-family: "Arvo", serif;
+    font-size: 22px;
+    font-weight: 400;
+    width: 60%;
+    margin: auto;
+    padding: 20px 0px;
+  }
+  .vision{
+  background-color:#2C2C2C;
+  display: flex;
+  align-items: center;
+  }
+  .visioncont img{
+    width: 60%;
+  }
+  .visonhead{
+  width: 60%;
+  
+  }
+  .visonhead h3{
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+  }
+
+
+  @media (max-width: 680px){
+    body{
+      background-color: #7BC424;
+    }
+    .container{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr ;
+      grid-template-areas: 
+      "Labs"
+      "iphone6"
+      "Keyboard"
+      "Games"
+      "IMAC"
+      "Twitter"
+      "MuchBetter"
+      "iCloud"
+      "POPULAr"
+      "POPULAr"
+      "vision"
+      ;
+    }
+    .Labs {
+      background-color: #F7F8F9;
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 74%;
+  }
+  }
